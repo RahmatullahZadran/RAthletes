@@ -39,7 +39,7 @@ module.exports = {
           '50%': { transform: 'translateY(-15%)' },
         },
         'scale-up': {
-          '0%': { transform: 'scale(0.95)' },
+          '100%': { transform: 'scale(0.95)' },
           '100%': { transform: 'scale(1)' },
         },
         'scale-down': {
