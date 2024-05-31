@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
   standalone: true,
 })
-export class HomeComponent {
+export class NavbarComponent {
   toggleMenu() {
     const menu = document.getElementById('mobile-menu');
     if (menu) {

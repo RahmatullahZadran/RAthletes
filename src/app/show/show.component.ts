@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-show',
-  standalone: true,
-  imports: [],
   templateUrl: './show.component.html',
-  styleUrl: './show.component.scss'
+  styleUrls: ['./show.component.scss'],
+  standalone: true  
 })
-export class ShowComponent {
+export class ShowComponent implements OnInit {
+  showComponent: boolean = false;
 
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+    this.showComponent = this.isHomePage();
+  }
+
+  isHomePage(): boolean {
+    return this.router.url === '/';
+  }
 }
