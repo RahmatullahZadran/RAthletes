@@ -1,25 +1,37 @@
-<nav class="bg-gray-800 p-4">
+<nav class="bg-black p-2">
   <div class="container mx-auto flex justify-between items-center">
-    <div class="text-white font-bold text-xl">Brand</div>
-    <div class="hidden md:flex space-x-4">
+    <!-- Logo -->
+    <div class="flex px-4">
+      <img class="h-13 w-13 object-cover xl h-16 w-20" alt="Logo"   src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/logo3.png?alt=media&token=9f5c39e5-b020-4be5-bd87-8736445aea3d">
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2">
       <a href="#" class="text-gray-300 hover:text-white">Home</a>
       <a href="#" class="text-gray-300 hover:text-white">About</a>
       <a href="#" class="text-gray-300 hover:text-white">Services</a>
       <a href="#" class="text-gray-300 hover:text-white">Contact</a>
     </div>
-    <div class="md:hidden flex items-center">
-      <button (click)="toggleMenu()" id="menu-button" class="text-gray-300 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-      
+
+    <!-- Login Button and Mobile Menu Button -->
+    <div class="flex items-center  space-x-4  px-4">
+      <a href="#" class="hidden md:block text-gray-300 hover:text-white">Login</a>
+      <div class="md:hidden flex items-center">
+        <button (click)="toggleMenu()" id="menu-button" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
+
+  <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden">
     <a href="#" class="block px-2 py-1 text-sm text-gray-300 hover:text-white">Home</a>
     <a href="#" class="block px-2 py-1 text-sm text-gray-300 hover:text-white">About</a>
     <a href="#" class="block px-2 py-1 text-sm text-gray-300 hover:text-white">Services</a>
     <a href="#" class="block px-2 py-1 text-sm text-gray-300 hover:text-white">Contact</a>
+    <a href="#" class="block px-2 py-1 text-sm text-gray-300 hover:text-white">Login</a>
   </div>
 </nav>
