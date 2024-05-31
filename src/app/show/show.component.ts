@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -5,7 +6,8 @@ import { Router } from '@angular/router';
   selector: 'app-show',
   templateUrl: './show.component.html',
   styleUrls: ['./show.component.scss'],
-  standalone: true  
+  standalone: true,  
+  imports: [CommonModule],
 })
 export class ShowComponent implements OnInit {
   showComponent: boolean = false;
