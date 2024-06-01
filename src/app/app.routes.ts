@@ -11,6 +11,8 @@ import { TricepsComponent } from './triceps/triceps.component';
 
 
 
+
+
 export const routes: Routes = [
    { path: '',
      component: ShowComponent },

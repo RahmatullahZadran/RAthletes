@@ -1,0 +1,9 @@
+<!-- firebase-data.component.html -->
+<div *ngIf="items$ | async as items; else loading">
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item.name }} - {{ item.description }}
+    </li>
+  </ul>
+</div>
+<ng-template #loading>Loading...</ng-template>
