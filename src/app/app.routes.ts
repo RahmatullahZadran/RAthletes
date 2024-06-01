@@ -7,6 +7,7 @@ import { BicepsComponent } from './biceps/biceps.component';
 import { LegsComponent } from './legs/legs.component';
 import { ShoulderComponent } from './shoulder/shoulder.component';
 import { TricepsComponent } from './triceps/triceps.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -30,4 +31,6 @@ export const routes: Routes = [
      component: ShoulderComponent }
     ,{ path: 'triceps',
      component: TricepsComponent }
+    ,{ path: 'login',
+     component: LoginComponent }
 ];
