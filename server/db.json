@@ -1,0 +1,249 @@
+{
+    "exercises": [
+      {
+        "id": 1,
+        "name": "Push-ups",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/pushups.gif?alt=media&token=b89fb9ae-3059-44b3-b4a9-0a5ec332dd74",
+        "description": "Push-ups are a great bodyweight exercise that target the chest, shoulders, and triceps."
+      },
+      {
+        "id": 2,
+        "name": "Bench Press",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/benchpress.gif?alt=media&token=0bd3434f-4d8c-44a7-8a9c-83e5287ed905",
+        "description": "The bench press is a classic exercise for building upper body strength, focusing on the chest, shoulders, and triceps."
+      },
+      {
+        "id": 3,
+        "name": "Chest Flyes",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/flies.gif?alt=media&token=76a1cedc-1059-418c-a43a-a7455d53d3a1",
+        "description": "Chest flyes are an isolation exercise that primarily targets the chest muscles, helping to develop definition and size."
+      },
+      {
+        "id": 4,
+        "name": "Incline Bench Press",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Incline%20Bench%20Press.gif?alt=media&token=c1f60ec6-3ade-4e9e-a021-9faf0b81c3ca",
+        "description": "The incline bench press targets the upper part of the chest, as well as the shoulders and triceps."
+      },
+      {
+        "id": 5,
+        "name": "Decline Bench Press",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Decline%20Bench%20Press.gif?alt=media&token=09af55cb-7d55-4c5d-b9b8-8d46ff5d35c6",
+        "description": "The decline bench press targets the lower part of the chest, shoulders, and triceps."
+      },
+      {
+        "id": 6,
+        "name": "Push-up Variations (Diamond, Wide, etc.)",
+        "category": "Chest",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Push-up%20Variations.gif?alt=media&token=f92a1187-252b-468a-ba17-36c1d3ac4863",
+        "description": "Variations of push-ups target different parts of the chest, triceps, and shoulders."
+      },
+      {
+        "id": 7,
+        "name": "Bicep Curls",
+        "category": "Biceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/bicepcurl.gif?alt=media&token=66774da3-c343-4639-b7a7-3cf9d818e22c",
+        "description": "Bicep curls are a basic strength training exercise that targets the biceps brachii muscle."
+      },
+      {
+        "id": 8,
+        "name": "Hammer Curls",
+        "category": "Biceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/hammercurls.gif?alt=media&token=8f7f6152-467a-41ea-916c-2a870c08b015",
+        "description": "Hammer curls are an effective exercise for building size and strength in the biceps and forearms."
+      },
+      {
+        "id": 9,
+        "name": "Preacher Curls",
+        "category": "Biceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/preachercruls.gif?alt=media&token=b73583eb-2c3b-4ddb-ad33-659e9694bbfe",
+        "description": "Preacher curls are a bicep exercise that isolates the muscle, helping to build size and definition."
+      },
+      {
+        "id": 10,
+        "name": "Concentration Curls",
+        "category": "Biceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Concentration%20Curls.gif?alt=media&token=fc48a5be-33e7-4c40-95cf-2359cccf8733",
+        "description": "Concentration curls isolate the biceps for improved strength and definition."
+      },
+      {
+        "id": 11,
+        "name": "Tricep Dips",
+        "category": "Triceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Tricep%20Dips.gif?alt=media&token=3f5064ca-775f-4dac-bfaa-f48c0f01b990",
+        "description": "Tricep dips are a bodyweight exercise that target the triceps, shoulders, and chest muscles."
+      },
+      {
+        "id": 12,
+        "name": "Tricep Extensions",
+        "category": "Triceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Tricep%20Extensions.gif?alt=media&token=1426bc97-eaa8-43a8-bffe-4d8327c38797",
+        "description": "Tricep extensions are an isolation exercise that primarily target the triceps muscle."
+      },
+      {
+        "id": 13,
+        "name": "Skull Crushers",
+        "category": "Triceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Skull%20Crushers.png?alt=media&token=53e13866-3048-4a25-a45c-5953ed60d6a4",
+        "description": "Skull crushers, also known as lying tricep extensions, are a great exercise for building size and strength in the triceps."
+      },
+      {
+        "id": 14,
+        "name": "Overhead Tricep Extension",
+        "category": "Triceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Overhead%20Tricep%20Extension.gif?alt=media&token=b6a16925-b3b9-4a7c-9446-9227d9447ed9",
+        "description": "Overhead tricep extensions target the long head of the tricep, promoting muscle growth and definition."
+      },
+      {
+        "id": 15,
+        "name": "Cable Tricep Pushdowns",
+        "category": "Triceps",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Cable%20Tricep%20Pushdowns.gif?alt=media&token=b879d811-9466-4740-bbde-e6377867779d",
+        "description": "Cable tricep pushdowns isolate the tricep muscles, enhancing size and strength."
+      },
+      {
+        "id": 16,
+        "name": "Pull-ups",
+        "category": "Back",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Pull-ups.jpeg?alt=media&token=73533843-0a5c-4c4b-b75f-a31129ff1c58",
+        "description": "Pull-ups are a bodyweight exercise that target the upper back, shoulders, and arms."
+      },
+      {
+        "id": 17,
+        "name": "Deadlifts",
+        "category": "Back",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Deadlifts.gif?alt=media&token=48f27d49-2222-406d-bf0c-b6dae0b7ad14",
+        "description": "Deadlifts are a compound exercise that target multiple muscle groups including the back, legs, and core."
+      },
+      {
+        "id": 18,
+        "name": "Bent-over Rows",
+        "category": "Back",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Bent-over%20Rows.gif?alt=media&token=9c4e8392-b1cb-439b-bd2c-be7b2846fe43",
+        "description": "Bent-over rows are a compound exercise that target the muscles of the upper back, shoulders, and arms."
+      },
+      {
+        "id": 19,
+        "name": "Lat Pulldowns",
+        "category": "Back",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Lat%20Pulldowns.gif?alt=media&token=a7b1057b-2478-43de-9e52-7dbdcc232000",
+        "description": "Lat pulldowns target the latissimus dorsi muscles, promoting back strength and width."
+      },
+      {
+        "id": 20,
+        "name": "T-Bar Rows",
+        "category": "Back",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/T-Bar%20Rows.gif?alt=media&token=fb84bca8-5abc-48a8-b327-0bcc09f59649",
+        "description": "T-bar rows focus on the middle back and promote overall back thickness and strength."
+      },
+      {
+        "id": 21,
+        "name": "Squats",
+        "category": "Legs",
+        "gifUrl": "https://example.com/squats.gif",
+        "description": "Squats are a fundamental lower body exercise that target the quadriceps, hamstrings, glutes, and core."
+      },
+      {
+        "id": 22,
+        "name": "Lunges",
+        "category": "Legs",
+        "gifUrl": "https://example.com/lunges.gif",
+        "description": "Lunges are a unilateral lower body exercise that target the quadriceps, hamstrings, glutes, and calves."
+      },
+      {
+        "id": 23,
+        "name": "Leg Press",
+        "category": "Legs",
+        "gifUrl": "https://example.com/legpress.gif",
+        "description": "Leg press is a machine-based exercise that targets the quadriceps, hamstrings, and glutes."
+      },
+      {
+        "id": 24,
+        "name": "Romanian Deadlifts",
+        "category": "Legs",
+        "gifUrl": "https://example.com/romaniandeadlifts.gif",
+        "description": "Romanian deadlifts target the hamstrings and glutes, promoting strength and flexibility."
+      },
+      {
+        "id": 25,
+        "name": "Calf Raises",
+        "category": "Legs",
+        "gifUrl": "https://example.com/calfraises.gif",
+        "description": "Calf raises target the calf muscles, promoting size and definition."
+      },
+      {
+        "id": 26,
+        "name": "Shoulder Press",
+        "category": "Shoulder",
+        "gifUrl": "https://example.com/shoulderpress.gif",
+        "description": "Shoulder press is a compound exercise that targets the deltoid muscles of the shoulders."
+      },
+      {
+        "id": 27,
+        "name": "Lateral Raises",
+        "category": "Shoulder",
+        "gifUrl": "https://example.com/lateralraises.gif",
+        "description": "Lateral raises are an isolation exercise that target the lateral deltoids, helping to build shoulder width and definition."
+      },
+      {
+        "id": 28,
+        "name": "Front Raises",
+        "category": "Shoulder",
+        "gifUrl": "https://example.com/frontraises.gif",
+        "description": "Front raises target the anterior deltoids, helping to build shoulder strength and definition."
+      },
+      {
+        "id": 29,
+        "name": "Reverse Flyes",
+        "category": "Shoulder",
+        "gifUrl": "https://example.com/reverseflyes.gif",
+        "description": "Reverse flyes target the posterior deltoids, helping to improve shoulder balance and posture."
+      },
+      {
+        "id": 30,
+        "name": "Arnold Press",
+        "category": "Shoulder",
+        "gifUrl": "https://example.com/arnoldpress.gif",
+        "description": "Arnold press is a variation of the shoulder press that targets all three heads of the deltoid muscle."
+      },
+      {
+        "id": 31,
+        "name": "Crunches",
+        "category": "Abs",
+        "gifUrl": "https://example.com/crunches.gif",
+        "description": "Crunches are a classic abdominal exercise that target the rectus abdominis, helping to build core strength and definition."
+      },
+      {
+        "id": 32,
+        "name": "Plank",
+        "category": "Abs",
+        "gifUrl": "https://example.com/plank.gif",
+        "description": "Plank is a static core exercise that engages multiple muscle groups including the Abs, obliques, and lower back."
+      },
+      {
+        "id": 33,
+        "name": "Russian Twists",
+        "category": "Abs",
+        "gifUrl": "https://example.com/russiantwists.gif",
+        "description": "Russian twists are an effective exercise for targeting the obliques, helping to build rotational strength and stability."
+      },
+      {
+        "id": 34,
+        "name": "Leg Raises",
+        "category": "Abs",
+        "gifUrl": "https://example.com/legraises.gif",
+        "description": "Leg raises target the lower abdominal muscles, promoting core strength and stability."
+      },
+      {
+        "id": 35,
+        "name": "Bicycle Crunches",
+        "category": "Abs",
+        "gifUrl": "https://example.com/bicyclecrunches.gif",
+        "description": "Bicycle crunches target the rectus abdominis and obliques, helping to build a strong and defined core."
+      }
+    ]
+  }
