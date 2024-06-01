@@ -1,0 +1,56 @@
+[debug] [2024-06-01T12:59:33.029Z] ----------------------------------------------------------------------
+[debug] [2024-06-01T12:59:33.034Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rahma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-01T12:59:33.035Z] CLI Version:   13.5.0
+[debug] [2024-06-01T12:59:33.035Z] Platform:      win32
+[debug] [2024-06-01T12:59:33.035Z] Node Version:  v21.7.1
+[debug] [2024-06-01T12:59:33.035Z] Time:          Sat Jun 01 2024 13:59:33 GMT+0100 (British Summer Time)
+[debug] [2024-06-01T12:59:33.036Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-01T12:59:33.121Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-01T12:59:33.122Z] > authorizing via signed-in user (rzdd6512@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Rahma\OneDrive\Desktop\Projects\RZathlete\Rathelete
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Account Setup
+[info] 
+[info] Which account do you want to use for this project? Choose an account or add a new one now
+[info] 
+[debug] [2024-06-01T12:59:55.000Z] setProjectAccount(C:\Users\Rahma\OneDrive\Desktop\Projects\RZathlete\Rathelete, zadranrahmatullah0@gmail.com)
+[info] 
+[info] +  Using account: zadranrahmatullah0@gmail.com 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-01T13:00:34.539Z] > refreshing access token with scopes: []
+[debug] [2024-06-01T13:00:34.541Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-01T13:00:34.541Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-01T13:00:34.752Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-01T13:00:34.753Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-01T13:00:34.761Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-01T13:00:34.761Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"rathletes-cd51c","name":"raathelets"}
+[debug] [2024-06-01T13:00:35.532Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-06-01T13:00:35.532Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-06-01T13:00:35.657Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Rahma\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Rahma\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:297:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID rathletes-cd51c. Please try again with a unique project ID.
