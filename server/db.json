@@ -88,7 +88,7 @@
         "id": 13,
         "name": "Skull Crushers",
         "category": "Triceps",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Skull%20Crushers.png?alt=media&token=53e13866-3048-4a25-a45c-5953ed60d6a4",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Skull%20Crushers.gif?alt=media&token=caaa32c3-70e4-40d5-baf8-ca141986e696",
         "description": "Skull crushers, also known as lying tricep extensions, are a great exercise for building size and strength in the triceps."
       },
       {
@@ -109,7 +109,7 @@
         "id": 16,
         "name": "Pull-ups",
         "category": "Back",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Pull-ups.jpeg?alt=media&token=73533843-0a5c-4c4b-b75f-a31129ff1c58",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Pull-ups.gif?alt=media&token=95ebbbcc-6eb5-4776-a9b2-153db900b52f",
         "description": "Pull-ups are a bodyweight exercise that target the upper back, shoulders, and arms."
       },
       {
@@ -144,21 +144,21 @@
         "id": 21,
         "name": "Squats",
         "category": "Legs",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Squats.jpeg?alt=media&token=1ad33dbb-f7d4-4a10-a185-1d15212075c3",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Squats.gif?alt=media&token=9f8dfe2d-690b-433e-bdc9-2ec4b3fbc575",
         "description": "Squats are a fundamental lower body exercise that target the quadriceps, hamstrings, glutes, and core."
       },
       {
         "id": 22,
         "name": "Lunges",
         "category": "Legs",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Lunges.jpeg?alt=media&token=76b4c2d3-52f2-480b-9765-2c8d20d6c089",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Lunges.gif?alt=media&token=3b4e84cb-9f35-4a8c-baf3-660fd14da31c",
         "description": "Lunges are a unilateral lower body exercise that target the quadriceps, hamstrings, glutes, and calves."
       },
       {
         "id": 23,
         "name": "Leg Press",
         "category": "Legs",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Leg%20Press.jpeg?alt=media&token=62799904-bc7b-4972-a22e-14771f9508a9",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Leg%20Press.gif?alt=media&token=5bd4d73e-f24e-4f55-af5b-1a8de61de9b9",
         "description": "Leg press is a machine-based exercise that targets the quadriceps, hamstrings, and glutes."
       },
       {
@@ -172,77 +172,77 @@
         "id": 25,
         "name": "Calf Raises",
         "category": "Legs",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Calf%20Raises.jpeg?alt=media&token=33c7dbe7-cb11-42e5-911b-a42b72971111",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/calfs.gif?alt=media&token=f1a98165-b39d-4a14-a2c5-402a1c7b0951",
         "description": "Calf raises target the calf muscles, promoting size and definition."
       },
       {
         "id": 26,
         "name": "Shoulder Press",
         "category": "Shoulder",
-        "gifUrl": "https://example.com/shoulderpress.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Shoulder%20Press.gif?alt=media&token=12b0ecdd-2806-48ff-98af-ab7499ea04a1",
         "description": "Shoulder press is a compound exercise that targets the deltoid muscles of the shoulders."
       },
       {
         "id": 27,
         "name": "Lateral Raises",
         "category": "Shoulder",
-        "gifUrl": "https://example.com/lateralraises.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Lateral%20Raises.webp?alt=media&token=00e07dab-ebd9-4a53-8c02-7e1a7218981b",
         "description": "Lateral raises are an isolation exercise that target the lateral deltoids, helping to build shoulder width and definition."
       },
       {
         "id": 28,
         "name": "Front Raises",
         "category": "Shoulder",
-        "gifUrl": "https://example.com/frontraises.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Front%20Raises.gif?alt=media&token=2f961617-5b40-4a79-b36d-1c8a88e4b495",
         "description": "Front raises target the anterior deltoids, helping to build shoulder strength and definition."
       },
       {
         "id": 29,
         "name": "Reverse Flyes",
         "category": "Shoulder",
-        "gifUrl": "https://example.com/reverseflyes.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Reverse%20Flyes.gif?alt=media&token=32bdf9ae-17fc-400e-80bd-8b6a78898dfa",
         "description": "Reverse flyes target the posterior deltoids, helping to improve shoulder balance and posture."
       },
       {
         "id": 30,
         "name": "Arnold Press",
         "category": "Shoulder",
-        "gifUrl": "https://example.com/arnoldpress.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Arnold-Press.gif?alt=media&token=98f212a4-57f3-44bc-b8c6-38f3d98bc05a",
         "description": "Arnold press is a variation of the shoulder press that targets all three heads of the deltoid muscle."
       },
       {
         "id": 31,
         "name": "Crunches",
         "category": "Abs",
-        "gifUrl": "https://example.com/crunches.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Crunches.gif?alt=media&token=a822632d-27b6-464f-b9ba-5aa80b88bf61",
         "description": "Crunches are a classic abdominal exercise that target the rectus abdominis, helping to build core strength and definition."
       },
       {
         "id": 32,
         "name": "Plank",
         "category": "Abs",
-        "gifUrl": "https://example.com/plank.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Plank.gif?alt=media&token=a57ed326-0f43-4057-b95a-b833404a738b",
         "description": "Plank is a static core exercise that engages multiple muscle groups including the Abs, obliques, and lower back."
       },
       {
         "id": 33,
         "name": "Russian Twists",
         "category": "Abs",
-        "gifUrl": "https://example.com/russiantwists.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Russian%20Twists.gif?alt=media&token=9b4106ea-b83e-4b5a-a178-22159c7e87ee",
         "description": "Russian twists are an effective exercise for targeting the obliques, helping to build rotational strength and stability."
       },
       {
         "id": 34,
         "name": "Leg Raises",
         "category": "Abs",
-        "gifUrl": "https://example.com/legraises.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Leg%20Raises.gif?alt=media&token=6e6a1b18-ea6a-47da-b7c1-82dbd28ddbc7",
         "description": "Leg raises target the lower abdominal muscles, promoting core strength and stability."
       },
       {
         "id": 35,
         "name": "Bicycle Crunches",
         "category": "Abs",
-        "gifUrl": "https://example.com/bicyclecrunches.gif",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Bicycle%20Crunches.gif?alt=media&token=9f174f39-0cd7-4c07-80b9-899b69783e67",
         "description": "Bicycle crunches target the rectus abdominis and obliques, helping to build a strong and defined core."
       }
     ]
