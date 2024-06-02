@@ -12,6 +12,7 @@ import {PlanSelectionComponent} from './plan-selection/plan-selection.component'
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { MapComponent } from './map/map.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -45,4 +46,6 @@ export const routes: Routes = [
      component: ResetPasswordComponent }
     ,{ path: 'map',
      component: MapComponent }
+    ,{ path: 'profile',
+     component: ProfileComponent }
 ];

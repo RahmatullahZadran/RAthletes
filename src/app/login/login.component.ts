@@ -25,7 +25,7 @@ export class LoginComponent {
     const { email, password } = this.signInForm.value;
     if (email === 'test@outlook.com' && password === 'test123456') {
       alert('Sign in successful!');
-      this.router.navigate(['/']);
+      this.router.navigate(['/profile']);
     } else {
       alert('Invalid credentials. Please try again.');
     }

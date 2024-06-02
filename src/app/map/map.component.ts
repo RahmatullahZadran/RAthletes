@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',

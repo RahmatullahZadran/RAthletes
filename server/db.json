@@ -244,6 +244,30 @@
         "category": "Abs",
         "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/Bicycle%20Crunches.gif?alt=media&token=9f174f39-0cd7-4c07-80b9-899b69783e67",
         "description": "Bicycle crunches target the rectus abdominis and obliques, helping to build a strong and defined core."
+      },
+      {
+        "id": 36,
+        "name": "John Doe",
+        "specialty": "Strength Training",
+        "gifUrl": "john_doe.jpg",
+        "category": "Trainer",
+        "description": "Expert in strength training."
+      },
+      {
+        "id": 37,
+        "name": "Jane Smith",
+        "specialty": "Yoga",
+        "gifUrl": "jane_smith.jpg",
+        "category": "Trainer",
+        "description": "Expert in yoga and flexibility."
+      },
+      {
+        "id": 38,
+        "name": "Mike Johnson",
+        "specialty": "Cardio",
+        "gifUrl": "mike_johnson.jpg",
+        "category": "Trainer",
+        "description": "Expert in cardio workouts."
       }
     ]
   }
