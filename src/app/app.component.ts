@@ -6,6 +6,9 @@ import { CommonModule } from '@angular/common';
 import { FirestoreDataComponent } from './firestore-data/firestore-data.component';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { Firestore, collection, collectionData } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { inject } from '@angular/core';
 
 
 @Component({
@@ -18,5 +21,13 @@ import { AngularFireModule } from '@angular/fire/compat';
 })
 export class AppComponent {
   title = 'Rathelete';
+  firestore: Firestore = inject(Firestore);
+  items$: Observable<any[]>;
+
+  constructor() {
+    const aCollection = collection(this.firestore, 'items')
+    this.items$ = collectionData(aCollection);
+  }
 }
+
 
