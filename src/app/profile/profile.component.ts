@@ -1,4 +1,3 @@
-// profile.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ExerciseService } from '../services/exercise.service';
 import { Exercise } from '../models/exercise.model';
@@ -6,6 +5,7 @@ import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { BookingModalComponent } from '../booking-modal/booking-modal.component';
 import { CommonModule } from '@angular/common';
+import { ConfettiService } from '../confety.service';
 
 @Component({
   selector: 'app-profile',
@@ -17,8 +17,12 @@ import { CommonModule } from '@angular/common';
 export class ProfileComponent implements OnInit {
   trainerExercises: Exercise[] = [];
   showBookingModal: boolean = false;
+  showCelebration: boolean = false;
 
-  constructor(private exerciseService: ExerciseService) { }
+  constructor(
+    private exerciseService: ExerciseService,
+    private confettiService: ConfettiService 
+  ) { }
 
   ngOnInit() {
     const url = 'http://localhost:3000/exercises'; // URL for fetching exercises
@@ -42,11 +46,21 @@ export class ProfileComponent implements OnInit {
         }
       });
   }
+
   bookLesson(exercise: any) {
     // Perform booking logic here
     // For example, you can show the booking modal
     this.showBookingModal = true;
+
+    // Check if the exercise name is "Rahmatullah Zadran"
+    if (exercise.name === 'Rahmatullah Zadran') {
+      this.showCelebration = true;
+      this.confettiService.launchConfetti(); // Trigger confetti
+    } else {
+      this.showCelebration = false;
+    }
   }
+
   openBookingModal() {
     this.showBookingModal = true;
   }
@@ -58,5 +72,4 @@ export class ProfileComponent implements OnInit {
     // Close the modal
     this.showBookingModal = false;
   }
-  
 }

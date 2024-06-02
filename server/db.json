@@ -247,11 +247,11 @@
       },
       {
         "id": 36,
-        "name": "John Doe",
-        "specialty": "Strength Training",
-        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/trainer1.png?alt=media&token=c7724ceb-a1e9-41d6-b4a3-8d75d957332c",
+        "name": "Rahmatullah Zadran",
+        "specialty": "Everthing",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/trainer2.webp?alt=media&token=322b634b-78e3-4f41-92a1-d0c60a79b729",
         "category": "Trainer",
-        "description": "Expert in strength training."
+        "description": "Trained Chuck Norris."
       },
       {
         "id": 37,
@@ -268,6 +268,15 @@
         "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/trainer2.webp?alt=media&token=322b634b-78e3-4f41-92a1-d0c60a79b729",
         "category": "Trainer",
         "description": "Expert in cardio workouts."
+      },
+
+      {
+        "id": 39,
+        "name": "John Doe",
+        "specialty": "Strength Training",
+        "gifUrl": "https://firebasestorage.googleapis.com/v0/b/rathletes-cd51c.appspot.com/o/trainer1.png?alt=media&token=c7724ceb-a1e9-41d6-b4a3-8d75d957332c",
+        "category": "Trainer",
+        "description": "Expert in strength training."
       }
     ]
   }
