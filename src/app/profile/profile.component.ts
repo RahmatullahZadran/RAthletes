@@ -1,18 +1,23 @@
+// profile.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ExerciseService } from '../services/exercise.service';
 import { Exercise } from '../models/exercise.model';
-import { CommonModule } from '@angular/common';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
+import { BookingModalComponent } from '../booking-modal/booking-modal.component';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-profile',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrls: ['./profile.component.scss', '../booking-modal/booking-modal.component.scss'],
+  standalone: true,
+  imports: [CommonModule, BookingModalComponent],
 })
 export class ProfileComponent implements OnInit {
-  trainerExercises: Exercise[] = []; 
+  trainerExercises: Exercise[] = [];
+  showBookingModal: boolean = false;
+
   constructor(private exerciseService: ExerciseService) { }
 
   ngOnInit() {
@@ -36,6 +41,22 @@ export class ProfileComponent implements OnInit {
           console.error('Invalid response format. Expected an array of exercises.');
         }
       });
-  }  
-}
+  }
+  bookLesson(exercise: any) {
+    // Perform booking logic here
+    // For example, you can show the booking modal
+    this.showBookingModal = true;
+  }
+  openBookingModal() {
+    this.showBookingModal = true;
+  }
 
+  handleBookingConfirmation(bookingDetails: { firstName: string, lastName: string, date: string }) {
+    // Handle the booking submission logic here
+    console.log('Booking details:', bookingDetails);
+
+    // Close the modal
+    this.showBookingModal = false;
+  }
+  
+}

@@ -9,12 +9,13 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { inject } from '@angular/core';
+import { BookingModalComponent } from './booking-modal/booking-modal.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, CommonModule, FirestoreDataComponent,AngularFirestoreModule,AngularFireModule ],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, CommonModule, FirestoreDataComponent,AngularFirestoreModule,AngularFireModule,BookingModalComponent], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
   

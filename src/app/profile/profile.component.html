@@ -22,7 +22,7 @@
                         <h2 class="text-xl font-semibold mb-2 text-gray-800">{{ exercise.name }}</h2>
                         <p class="text-gray-600 mb-4">{{ exercise.description }}</p>
                         <div class="text-center">
-                            <button class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <button (click)="bookLesson(exercise)"  class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                 Book Lesson Now
                             </button>
                         </div>
@@ -32,3 +32,9 @@
         </div>
     </div>
 </div>
+<div>
+
+    <app-booking-modal *ngIf="showBookingModal" (bookingConfirmed)="handleBookingConfirmation($event)" ></app-booking-modal>
+</div>
+
+

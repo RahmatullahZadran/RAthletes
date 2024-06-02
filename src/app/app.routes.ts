@@ -13,6 +13,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { MapComponent } from './map/map.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BookingModalComponent } from './booking-modal/booking-modal.component';
 
 
 
@@ -48,4 +49,6 @@ export const routes: Routes = [
      component: MapComponent }
     ,{ path: 'profile',
      component: ProfileComponent }
+    ,{ path: 'booking-modal',
+     component: BookingModalComponent }
 ];
