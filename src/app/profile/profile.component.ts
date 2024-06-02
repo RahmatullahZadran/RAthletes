@@ -72,4 +72,7 @@ export class ProfileComponent implements OnInit {
     // Close the modal
     this.showBookingModal = false;
   }
+  handleModalClose() {
+    this.showBookingModal = false;
+  }
 }

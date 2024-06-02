@@ -32,7 +32,6 @@
       </div>
     </div>
   </div>
-  <div>
-    <app-booking-modal *ngIf="showBookingModal" (bookingConfirmed)="handleBookingConfirmation($event)"></app-booking-modal>
-  </div>
+  
+  <!-- Booking Modal -->  <app-booking-modal *ngIf="showBookingModal" (bookingConfirmed)="handleBookingConfirmation($event)" (modalClosed)="handleModalClose()"></app-booking-modal>
   
