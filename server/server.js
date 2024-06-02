@@ -1,92 +1,65 @@
 const express = require("express");
-const fs = require("fs");
-const cors = require("cors");
+const mongoose = require("mongoose");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use the PORT environment variable if provided, otherwise use port 3000
 
-// Cors configuration - Allows requests from localhost:4200
-const corsOptions = {
-  origin: "http://localhost:4200",
-  optionsSuccessStatus: 204,
-  methods: "GET, POST, PUT, DELETE",
-};
-
-// Use cors middleware
-app.use(cors(corsOptions));
-
-// Use express.json() middleware to parse JSON bodies of requests
-app.use(express.json());
-
-// GET route - Allows to get all the exercises
-app.get("/exercises", (req, res) => {
-  const page = parseInt(req.query.page) || 0;
-  const pageSize = parseInt(req.query.pageSize) || 1000;
-
-  fs.readFile("db.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Internal Server Error");
-      return;
-    }
-
-    const jsonData = JSON.parse(data);
-
-    const start = page * pageSize;
-    const end = start + pageSize;
-
-    const result = jsonData.exercises.slice(start, end);
-
-    res.status(200).json({
-      exercises: result,
-      total: jsonData.exercises.length,
-      page,
-      pageSize,
-      totalPages: Math.ceil(jsonData.exercises.length / pageSize),
-    });
-  });
+// Connect to MongoDB
+mongoose.connect("mongodb://localhost:27017/exercisesDB", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+  console.log("Connected to MongoDB");
 });
 
-// POST route - Allows to add a new exercise
-app.post("/exercises", (req, res) => {
+// Exercise Schema
+const exerciseSchema = new mongoose.Schema({
+  name: String,
+  category: String,
+  gifUrl: String,
+  description: String,
+});
+
+const Exercise = mongoose.model("Exercise", exerciseSchema);
+
+// Middleware
+app.use(express.json());
+
+// GET route - Get all exercises
+app.get("/exercises", async (req, res) => {
+  try {
+    const exercises = await Exercise.find();
+    res.status(200).json(exercises);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+// POST route - Add a new exercise
+app.post("/exercises", async (req, res) => {
   const { name, category, gifUrl, description } = req.body;
 
-  fs.readFile("db.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Internal Server Error");
-      return;
-    }
-
-    const jsonData = JSON.parse(data);
-
-    const maxId = Math.max(...jsonData.exercises.map((exercise) => exercise.id));
-
-    const newExercise = {
-      id: maxId + 1,
+  try {
+    const newExercise = await Exercise.create({
       name,
       category,
       gifUrl,
       description,
-    };
-
-    jsonData.exercises.push(newExercise);
-
-    fs.writeFile("db.json", JSON.stringify(jsonData), (err) => {
-      if (err) {
-        console.log(err);
-        res.status(500).send("Internal Server Error");
-        return;
-      }
-
-      res.status(201).json(newExercise);
     });
-  });
+    res.status(201).json(newExercise);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 // Other routes for PUT and DELETE can be added similarly
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+  console.log(`Server listening at port ${port}`);
 });
