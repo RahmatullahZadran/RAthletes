@@ -17,7 +17,7 @@ import { BookingModalComponent } from './booking-modal/booking-modal.component';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, FooterComponent, CommonModule, FirestoreDataComponent,AngularFirestoreModule,AngularFireModule,BookingModalComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
   
 })
 export class AppComponent {
