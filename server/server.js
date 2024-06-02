@@ -1,5 +1,5 @@
 const express = require("express");
-const fs = require("fs");
+const fs = require("fs").promises; // Use promises version of fs
 const cors = require("cors");
 
 const app = express();
@@ -19,17 +19,12 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // GET route - Allows to get all the exercises
-app.get("/exercises", (req, res) => {
-  const page = parseInt(req.query.page) || 0;
-  const pageSize = parseInt(req.query.pageSize) || 1000;
+app.get("/exercises", async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 0;
+    const pageSize = parseInt(req.query.pageSize) || 1000;
 
-  fs.readFile("db.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Internal Server Error");
-      return;
-    }
-
+    const data = await fs.readFile("db.json", "utf8");
     const jsonData = JSON.parse(data);
 
     const start = page * pageSize;
@@ -44,20 +39,18 @@ app.get("/exercises", (req, res) => {
       pageSize,
       totalPages: Math.ceil(jsonData.exercises.length / pageSize),
     });
-  });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 // POST route - Allows to add a new exercise
-app.post("/exercises", (req, res) => {
-  const { name, category, gifUrl, description } = req.body;
+app.post("/exercises", async (req, res) => {
+  try {
+    const { name, category, gifUrl, description } = req.body;
 
-  fs.readFile("db.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Internal Server Error");
-      return;
-    }
-
+    const data = await fs.readFile("db.json", "utf8");
     const jsonData = JSON.parse(data);
 
     const maxId = Math.max(...jsonData.exercises.map((exercise) => exercise.id));
@@ -72,19 +65,14 @@ app.post("/exercises", (req, res) => {
 
     jsonData.exercises.push(newExercise);
 
-    fs.writeFile("db.json", JSON.stringify(jsonData), (err) => {
-      if (err) {
-        console.log(err);
-        res.status(500).send("Internal Server Error");
-        return;
-      }
+    await fs.writeFile("db.json", JSON.stringify(jsonData));
 
-      res.status(201).json(newExercise);
-    });
-  });
+    res.status(201).json(newExercise);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
 });
-
-// Other routes for PUT and DELETE can be added similarly
 
 // Start the server
 app.listen(port, () => {
