@@ -1,42 +1,42 @@
+// legs.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ExerciseService } from '../services/exercise.service';
-import { Exercise } from '../models/exercise.model';
-import { CommonModule } from '@angular/common';
+import { Exercise } from '../services/exersices.server';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-legs',
-  standalone: true,
-  imports: [ CommonModule],
   templateUrl: './legs.component.html',
-  styleUrl: './legs.component.scss'
+  styleUrls: ['./legs.component.scss'],
+  standalone: true,
+  imports: [CommonModule]
 })
 export class LegsComponent implements OnInit {
-  legsExercises: Exercise[] = []; // Array to store  legs exercises
+  legsExercises: Exercise[] = []; // Array to store legs exercises
+  isLoading = true;
+  errorMessage = '';
 
   constructor(private exerciseService: ExerciseService) { }
 
   ngOnInit() {
-    const url = 'http://localhost:3000/exercises'; // URL for fetching exercises
-    const params = { page: 0, pageSize: 1000, category: 'Legs' }; // Include default pagination parameters
-
-    this.exerciseService
-      .getExercises(url, params) // Pass both URL and params
+    this.exerciseService.getExercises()
       .pipe(
         catchError((error) => {
           console.error('Error fetching legs exercises:', error);
-          return throwError('Failed to fetch legs exercises. Please try again later.');
+          this.errorMessage = 'Failed to fetch legs exercises. Please try again later.';
+          this.isLoading = false;
+          return throwError(error);
         })
       )
-      .subscribe((response: any) => {
-        console.log(response); // Log the response to see its structure
-        if (Array.isArray(response.exercises)) {
-          // Filter exercises to include only those with category "legs"
-          this.legsExercises = response.exercises;
+      .subscribe((response: any[]) => {
+        if (response.length === 1 && Array.isArray(response[0].exercises)) {
+          // Accessing the exercises array directly from the response
+          this.legsExercises = response[0].exercises.filter((exercise: Exercise) => exercise.category === 'Legs');
         } else {
           console.error('Invalid response format. Expected an array of exercises.');
         }
       });
-  }  
+  }
 }

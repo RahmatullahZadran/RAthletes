@@ -15,32 +15,33 @@ import { ConfettiService } from '../confety.service';
   imports: [CommonModule, BookingModalComponent],
 })
 export class ProfileComponent implements OnInit {
-  trainerExercises: Exercise[] = [];
   showBookingModal: boolean = false;
   showCelebration: boolean = false;
 
-  constructor(
-    private exerciseService: ExerciseService,
-    private confettiService: ConfettiService 
+  
+
+  trainerExercises: Exercise[] = []; // Array to store legs exercises
+  isLoading = true;
+  errorMessage = '';
+
+  constructor(private exerciseService: ExerciseService,
+    private confettiService: ConfettiService
   ) { }
 
   ngOnInit() {
-    const url = 'http://localhost:3000/exercises'; // URL for fetching exercises
-    const params = { page: 0, pageSize: 1000, category: 'Trainer' }; // Include default pagination parameters
-
-    this.exerciseService
-      .getExercises(url, params) // Pass both URL and params
+    this.exerciseService.getExercises()
       .pipe(
         catchError((error) => {
-          console.error('Error fetching Trainer:', error);
-          return throwError('Failed to fetch trainer exercises. Please try again later.');
+          console.error('Error fetching legs exercises:', error);
+          this.errorMessage = 'Failed to fetch legs exercises. Please try again later.';
+          this.isLoading = false;
+          return throwError(error);
         })
       )
-      .subscribe((response: any) => {
-        console.log(response); // Log the response to see its structure
-        if (Array.isArray(response.exercises)) {
-          // Filter exercises to include only those with category "trainer"
-          this.trainerExercises = response.exercises;
+      .subscribe((response: any[]) => {
+        if (response.length === 1 && Array.isArray(response[0].exercises)) {
+          // Accessing the exercises array directly from the response
+          this.trainerExercises = response[0].exercises.filter((exercise: Exercise) => exercise.category === 'Trainer');
         } else {
           console.error('Invalid response format. Expected an array of exercises.');
         }
