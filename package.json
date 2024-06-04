@@ -5,11 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
-    "postbuild": "node server/server.js",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:server": "node server/server.js",
-    "deploy": "npm run build && npm run serve:server"
+    "test": "ng test"
+    
   },
   "private": true,
   "dependencies": {
